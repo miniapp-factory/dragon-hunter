@@ -1,7 +1,16 @@
-import { generateMetadata } from "@/lib/farcaster-embed";
+import { generateMetadata as generateFarcasterMetadata } from "@/lib/farcaster-embed";
 import Quiz from "@/components/quiz";
 
-export { generateMetadata };
+export async function generateMetadata() {
+  const meta = await generateFarcasterMetadata();
+  return {
+    ...meta,
+    other: {
+      ...meta.other,
+      'base:app_id': '691fbaee7f22d95cdee2ffb2',
+    },
+  };
+}
 
 export default function Home() {
   return (
