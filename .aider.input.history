@@ -2424,3 +2424,37 @@
 +  )
 +}
 +bc_6qw3gmv5
+
+# 2025-12-14 14:18:15.867608
++hataları düzelt
++󰎦
++Metatag base:app_id not found
++
++import { Metadata } from 'next';
++
++export const metadata: Metadata = {
++  other: {
++    'base:app_id': '691fbaee7f22d95cdee2ffb2',
++  },
++};
++
++export default function Home() {
++  return (<div>{/* Your page content */}</div>);
++}
+
+# 2025-12-14 14:18:15.868824
++hataları düzelt
++󰎦
++Metatag base:app_id not found
++
++import { Metadata } from 'next';
++
++export const metadata: Metadata = {
++  other: {
++    'base:app_id': '691fbaee7f22d95cdee2ffb2',
++  },
++};
++
++export default function Home() {
++  return (<div>{/* Your page content */}</div>);
++}
