@@ -1,8 +1,7 @@
 import { generateMetadata as generateFarcasterMetadata } from "@/lib/farcaster-embed";
 import Quiz from "@/components/quiz";
 import { useSendCalls } from 'wagmi';
-import { parseEther } from 'viem';
-import { Attribution } from 'ox/erc8021';
+import { Attribution } from 'ox';
 
 export async function generateMetadata() {
   const meta = await generateFarcasterMetadata();
